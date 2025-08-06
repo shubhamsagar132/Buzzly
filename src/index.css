@@ -3,3 +3,6 @@
 *{
       font-family: "Outfit", sans-serif;
 }
+.no-scroll-bar::-webkit-scrollbar{
+      display: none;
+}
