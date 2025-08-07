@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import {Toaster} from 'react-hot-toast'
 import Login from './pages/Login';
 import Feed from './pages/Feed';
 import Messages from './Messages';
@@ -14,6 +15,7 @@ const App = () => {
   const {user}=useUser()
   return (
     <>
+    <Toaster/>
    <Routes>
       <Route path="/" element={!user? <Login />:<Layout/>}>
         <Route index element={<Feed />} />
